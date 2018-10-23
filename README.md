@@ -3,6 +3,7 @@ Monitoring for Ethos rings by using Python and Email notifications
 
 To use the scripts in your web server and monitor your rig, you will need to do the following:
 1) Change the metrics in each of the scripts 
+
 e.g.
 address = use your ethos API 
 email = use your email here
@@ -19,6 +20,7 @@ minvalue = '4'
 
 
 2) Put the script files and log files in an folder at home directory. Also you need to install Python3
+
 e.g 
 Script files = /home/python/
 log files = /home/python/logs
@@ -46,14 +48,17 @@ log files = /home/python/logs
 
 
 3) Install a web server
+
 Apache is ok for this task
 
 
 4) Install mail and mailutils
+
 apt-get install mailutils
 
 
 5) Rsync the scripts to the web server folder (add it in the cronjob)
+
 * * * * * /usr/bin/rsync -a /home/python/logs/rig_* /var/www/html/stats/
 
 
@@ -108,6 +113,7 @@ apt-get install mailutils
 
 
 p.s 
+
 Also i uploaded the rigmonit python script that will generate all the python scripts that you want to use for your monitoring. You only need to provide the following and the script will do the rest for you:
 address = input('Enter Ethos Rig API URL: ')
 email = input('Enter your emails addess: ')
