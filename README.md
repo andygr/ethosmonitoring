@@ -27,13 +27,21 @@ log files = /home/python/logs
 2) Create a cron job to export the results to log files
 
 */30 * * * * /usr/bin/python3 /home/python/rig_algpu.py > /home/python/logs/rig_algpu.log
+
 */30 * * * * /usr/bin/python3 /home/python/rig_alrigs.py > /home/python/logs/rig_alrigs.log
+
 */30 * * * * /usr/bin/python3 /home/python/rig_avgtemp.py > /home/python/logs/rig_avgtemp.log
+
 */30 * * * * /usr/bin/python3 /home/python/rig_cond.py > /home/python/logs/rig_cond.log
+
 */30 * * * * /usr/bin/python3 /home/python/rig_hagpu.py > /home/python/logs/rig_hagpu.log
+
 */30 * * * * /usr/bin/python3 /home/python/rig_thash.py > /home/python/logs/rig_thash.log
+
 */30 * * * * /usr/bin/python3 /home/python/rig_togpu.py > /home/python/logs/rig_togpu.log
+
 */30 * * * * /usr/bin/python3 /home/python/rig_torigs.py > /home/python/logs/rig_torigs.log
+
 
 
 
