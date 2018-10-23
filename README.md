@@ -48,8 +48,8 @@ apt-get install mailutils
 * * * * * /usr/bin/rsync -a /home/python/logs/rig_* /var/www/html/stats/
 
 
-6) Create an HTML page in the same folder with the log files (index.html)
-******
+6) Create an HTML page in the same folder with the log files (index.html). Use the raw page to see the source code
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -94,7 +94,7 @@ apt-get install mailutils
 </center>
 </body>
 </html>
-*******
+
 
 
 
