@@ -18,13 +18,14 @@ value = 'alive_gpus'
 minvalue = '4'
 
 
-2) Put the script files and log files in an folder at home directory
+2) Put the script files and log files in an folder at home directory. Also you need to install Python3
 e.g 
 Script files = /home/python/
 log files = /home/python/logs
 
 
 2) Create a cron job to export the results to log files
+
 */30 * * * * /usr/bin/python3 /home/python/rig_algpu.py > /home/python/logs/rig_algpu.log
 */30 * * * * /usr/bin/python3 /home/python/rig_alrigs.py > /home/python/logs/rig_alrigs.log
 */30 * * * * /usr/bin/python3 /home/python/rig_avgtemp.py > /home/python/logs/rig_avgtemp.log
