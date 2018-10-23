@@ -26,7 +26,7 @@ Script files = /home/python/
 log files = /home/python/logs
 
 
-2) Create a cron job to export the results to log files
+3) Create a cron job to export the results to log files
 
 */30 * * * * /usr/bin/python3 /home/python/rig_algpu.py > /home/python/logs/rig_algpu.log
 
@@ -47,22 +47,22 @@ log files = /home/python/logs
 
 
 
-3) Install a web server
+4) Install a web server
 
 Apache is ok for this task
 
 
-4) Install mail and mailutils
+5) Install mail and mailutils
 
 apt-get install mailutils
 
 
-5) Rsync the scripts to the web server folder (add it in the cronjob)
+6) Rsync the scripts to the web server folder (add it in the cronjob)
 
 * * * * * /usr/bin/rsync -a /home/python/logs/rig_* /var/www/html/stats/
 
 
-6) Create an HTML page in the same folder with the log files (index.html). Use the raw page to see the source code
+7) Create an HTML page in the same folder with the log files (index.html). Use the raw page to see the source code
 
 <!DOCTYPE html>
 <html>
