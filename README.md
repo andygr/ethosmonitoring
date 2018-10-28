@@ -23,7 +23,7 @@ rig_hagpu.py
 python rigmonit.py
 
 
-### 3) The script will ask for the following ifo:
+### 3) The script will ask for the following info:
 ```
 Enter Ethos Rig API URL: <you can get this by clicking the API in your ethos distro portal>
 Enter your emails addess: <use your email>
@@ -116,7 +116,7 @@ apt-get install mailutils
 ```
 
 
-13) Create an HTML page in the same folder with the log files (index.html). Use the raw page to see the source code
+### 13) Create an HTML page in the same folder with the log files (index.html). Use the raw page to see the source code
 ```
 <!DOCTYPE html>
 <html>
