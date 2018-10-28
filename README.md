@@ -1,5 +1,5 @@
 # Ethos monitoring Python Scripts
-
+## NOTE: in the individual rig_ scripts you need to type your email for the notification
 
 
 # Steps
