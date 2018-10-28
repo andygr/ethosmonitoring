@@ -1,9 +1,10 @@
-To use the scripts in your web server and monitor your rig, you will need to do the following:
+# Ethos monitoring Python Scripts
 
 
 
+# Steps
 
-1) In an server with Python 3 installed copy the following script in a folder:
+## 1) In an server with Python 3 installed copy the following script in a folder:
 rigmonit.py
 
 Also create these files in the same folder (touch <file name>):
