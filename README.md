@@ -8,6 +8,7 @@
 rigmonit.py
 
 Also create these files in the same folder (touch <file name>):
+```
 rig_cond.py
 rig_thash.py
 rig_algpu.py
@@ -16,7 +17,7 @@ rig_alrigs.py
 rig_torigs.py
 rig_avgtemp.py
 rig_hagpu.py
-
+```
 
 2) Run the script:
 python rigmonit.py
