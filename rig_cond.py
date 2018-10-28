@@ -33,7 +33,7 @@ final1 = list(find(value, data))
 if string in final1:
     check = 'No Problem'
 else:
-    os.system('echo "The monitoring system reported a problem with the condition of the rig, check your rig portal"  | mail -v -s "ETHOS Worker 5f8cab Update" andre8525@hotmail.com')
+    os.system('echo "The monitoring system reported a problem with the condition of the rig, check your rig portal"  | mail -v -s "ETHOS Worker 5f8cab Update" WRITE YOUR EMAIL HERE')
     check = 'Yes.. PROBLEM'
     
 
