@@ -4,7 +4,7 @@
 
 # Steps
 
-## 1) In an server with Python 3 installed copy the following script in a folder:
+### 1) In an server with Python 3 installed copy the following script in a folder:
 rigmonit.py
 
 Also create these files in the same folder (touch <file name>):
@@ -19,25 +19,24 @@ rig_avgtemp.py
 rig_hagpu.py
 ```
 
-2) Run the script:
+### 2) Run the following script:
 python rigmonit.py
 
 
-3) The script will ask for the following ifo:
+### 3) The script will ask for the following ifo:
+```
 Enter Ethos Rig API URL: <you can get this by clicking the API in your ethos distro portal>
 Enter your emails addess: <use your email>
+```
 
-
-4) Script will return some data from the API:
+### 4) Script will return some data from the API:
+```
 Retrieving...... <API URL>
 ****** Restults ******
-.
-.
-.
-.
+```
 
-
-5) Script will ask which metrics to monitor:
+### 5) Script will ask which metrics to monitor:
+```
 ------------------------------------------------------------
    WHICH SETTING WOULD YOU LIKE TO MONITOR?
 ------------------------------------------------------------
@@ -59,31 +58,30 @@ Retrieving...... <API URL>
 ['28.6']
 ------------------------------------------------------------
 Enter your choice [1-8], or press [0] for exit: 
+```
 
 
-6) Input your selection and the script will ask the minimum or maximum value. 
+### 6) Input your selection and the script will ask the minimum or maximum value. 
 If the current value change then you will get an email notification
 
 
-
-
-7) Rigmonit script will append the following data (based on your input) to the individual monitoring scripts
-
+### 7) Rigmonit script will append the following data (based on your input) to the individual monitoring scripts
+```
 example for how many alive GPUs are:
 address = <ethos API address>
 email = <your email>
 string = '[6]'
 value = 'alive_gpus'
 minvalue = '4'
+```
+
+
+### 8) Create the log folder and the log files. Check step 9 
 
 
 
-8) Create the log folder and the log files. Check step 9 
-
-
-
-9) Create a cron job to export the results to log files
-
+### 9) Create a cron job to export the results to log files
+```
 */30 * * * * /usr/bin/python3 /home/python/rig_algpu.py > /home/python/logs/rig_algpu.log
 
 */30 * * * * /usr/bin/python3 /home/python/rig_alrigs.py > /home/python/logs/rig_alrigs.log
@@ -99,30 +97,27 @@ minvalue = '4'
 */30 * * * * /usr/bin/python3 /home/python/rig_togpu.py > /home/python/logs/rig_togpu.log
 
 */30 * * * * /usr/bin/python3 /home/python/rig_torigs.py > /home/python/logs/rig_torigs.log
+```
 
 
-
-
-10) Install a web server
-
+### 10) Install a web server
 Apache is ok for this task
 
 
 
-11) Install mail and mailutils
-
+### 11) Install mail and mailutils
 apt-get install mailutils
 
 
 
-12) Rsync the scripts to the web server folder (add it in the cronjob)
-
+### 12) Rsync the scripts to the web server folder (add it in the cronjob)
+```
 * * * * * /usr/bin/rsync -a /home/python/logs/rig_* /var/www/html/stats/
-
+```
 
 
 13) Create an HTML page in the same folder with the log files (index.html). Use the raw page to see the source code
-
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -167,7 +162,7 @@ apt-get install mailutils
 </center>
 </body>
 </html>
-
+```
 
 
 
