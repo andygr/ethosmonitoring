@@ -35,7 +35,7 @@ strfinal1 = ''.join(str(v) for v in intfinal1)
 
 if minvalue in strfinal1:
     check = 'Yes... PROBLEM'
-    os.system('echo "The monitoring system reported a problem with the Total Hash of the rig, check your rig portal"  | mail -v -s "ETHOS Worker 5f8cab Update" andre8525@hotmail.com')
+    os.system('echo "The monitoring system reported a problem with the Total Hash of the rig, check your rig portal"  | mail -v -s "ETHOS Worker 5f8cab Update" WRITE YOUR EMAIL HERE')
 else:
     check = 'No Problem'
     
